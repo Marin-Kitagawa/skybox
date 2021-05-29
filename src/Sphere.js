@@ -12,7 +12,7 @@ function Sphere() {
   const { scene, gl } = useThree();
   // The cubeRenderTarget is used to generate a texture for the reflective sphere.
   // It must be updated on each frame in order to track camera movement and other changes.
-  const cubeRenderTarget = new WebGLCubeRenderTarget(256, {
+  const cubeRenderTarget = new WebGLCubeRenderTarget(512, {
     format: RGBFormat,
     generateMipmaps: true,
     minFilter: LinearMipmapLinearFilter
